@@ -39,8 +39,12 @@ return(
     <div>
     <div className="background"></div>
     <div className="total">
-    <input type="text" placeholder='Enter you Promise...' onChange={recordchange} value={value} className='inp'/>
-    <button onClick={save} className='add'>Promise</button>
+    <div className="input-container">
+  <input required="true" placeholder='Enter you Promise...' onChange={recordchange} value={value}/>
+  <button className="invite-btn" type="button" onClick={save}>
+    Promise
+  </button>
+  </div>
     <br />
     <div className="container">
     {list.map((ele,index)=>{
@@ -48,8 +52,8 @@ return(
         <div  className="line" key={index}>
           <h1>{ele}</h1>
           <div className="row">
-          <button onClick={()=>{Done(index)}} className='Button'>👍</button>
-          <button onClick={()=>{addtask()}} className='Button'>👎</button>
+          <div onClick={()=>{Done(index)}} className='Button' title="Done">🥰</div>
+          <div onClick={()=>{addtask()}} className='Button' title="Delete">😑</div>
           </div>
         </div>
       )
