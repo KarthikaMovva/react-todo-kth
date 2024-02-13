@@ -1,0 +1,48 @@
+.total{
+/* background-image: url(https://img.freepik.com/premium-vector/purple-night-sky-with-moon-fluffy-clouds-lots-stars-dream-illustration-peaceful-fantasy-background_511660-1151.jpg);
+background-size: cover;
+background-repeat: no-repeat; */
+display: flex;
+flex-direction: column;
+width: 300px;
+margin-left: 600px;
+top: 300px;
+position: absolute;
+}
+.inp{
+   height: 30px;
+   border-radius: 5px;
+   /* background-color: white; */
+}
+.Button{
+    margin-right: 50px;
+    height: 30px;
+    width: 50px;
+    cursor: pointer;
+    /* background-color: white; */
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+    gap: 30px;
+    /* background-color: white; */
+}
+.line{
+    /* height: 100px;
+    width: auto; */
+    /* border: 1px solid black; */
+    font-size: small;
+}
+.row{
+    display: flex;
+}
+.background{
+    background-image: url(https://img.freepik.com/premium-vector/purple-night-sky-with-moon-fluffy-clouds-lots-stars-dream-illustration-peaceful-fantasy-background_511660-1151.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 1000px;
+    width: 1600px;
+    margin: 0;
+    padding: 0;
+}
